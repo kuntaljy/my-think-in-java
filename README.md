@@ -15,13 +15,13 @@ String是final类型，每次改变都会生成新的对象，大量字符串拼
 ## Why are ENUMS important for Readable Code?
 枚举可以定义数据的名称，用于替换魔鬼数字(字符)使得程序可读性更高
 ## Why should you minimize mutability?
-尽可能地限制类的可变性，可以减少对象存在的状态数量，可以更容易地分析对象，以及降低出错的可能性。
+尽可能地限制类的可变性，可以减少对象存在的状态数量，可以更容易地分析对象，以及降低出错的可能性，所以能定义为final的类尽量定义为final
 ## What is functional programming?
 将行为作为数据传递
 ## Why should you prefer Builder Pattern to build complex objects?
 当我们创建一个对象需要判断大量条件和参数时，与其提供带有大量参数的、各种不同重载方式的构造函数（其中可能有部分必传参数部分可选参数），倒不如为它专门提供一个Builder类来负责处理这些创建逻辑
 ## Why should you avoid floats for Calculations?
-浮点数计算为丢失精度，在高精度要求的场景下可能引起严重的问题
+浮点数计算会丢失精度，在高精度要求的场景下可能引起严重的问题
 ## Why should you build the riskiest high priority features first?
 1.	风险可控
 2.	尽早暴露问题
